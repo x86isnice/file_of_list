@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1460961668 source:/home/x86isnice/file_of_list/main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<cmath>
+	<map>
+	<vector>
+	<ctime>
+	<stdlib.h>
+

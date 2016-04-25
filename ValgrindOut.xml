@@ -1,0 +1,798 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: /home/x86isnice/file_of_list/bin/Debug/file_of_list </line>
+</preamble>
+
+<pid>4242</pid>
+<ppid>2746</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--leak-check=full</arg>
+    <arg>--track-origins=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/x86isnice/file_of_list/ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>/home/x86isnice/file_of_list/bin/Debug/file_of_list</exe>
+    <arg></arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.206 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:02:33.653 </time>
+</status>
+
+<error>
+  <unique>0xe</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 15 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4027FB</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>187</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xf</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 16 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x402850</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>188</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x10</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 17 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4028A5</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>189</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x11</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 18 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4028FA</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>190</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x12</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 19 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x40294F</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>191</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x13</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 20 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4029A4</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>192</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x14</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 21 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4029F9</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>193</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x15</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 22 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x402A4E</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>194</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x16</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>65 bytes in 1 blocks are possibly lost in loss record 23 of 39</text>
+    <leakedbytes>65</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x402AA3</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>195</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x17</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>85 bytes in 1 blocks are possibly lost in loss record 24 of 39</text>
+    <leakedbytes>85</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1E0A</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_M_clone(std::allocator&lt;char&gt; const&amp;, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1EA3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::reserve(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF20EE</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::append(char const*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EACEB3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_istream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::getline&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;(std::basic_istream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;&amp;, char)</fn>
+    </frame>
+    <frame>
+      <ip>0x401A2A</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>Solve(int, int, std::string)</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>80</line>
+    </frame>
+    <frame>
+      <ip>0x40308D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>221</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x19</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>418 bytes in 11 blocks are possibly lost in loss record 26 of 39</text>
+    <leakedbytes>418</leakedbytes>
+    <leakedblocks>11</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF27A0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char*&gt;(char*, char*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF287B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(std::string const&amp;, unsigned long, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF28B1</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::substr(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x401C55</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>Solve(int, int, std::string)</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>99</line>
+    </frame>
+    <frame>
+      <ip>0x40308D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>221</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1a</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>418 bytes in 11 blocks are possibly lost in loss record 27 of 39</text>
+    <leakedbytes>418</leakedbytes>
+    <leakedblocks>11</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF27A0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char*&gt;(char*, char*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF287B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(std::string const&amp;, unsigned long, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF28B1</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::substr(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x401C8D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>Solve(int, int, std::string)</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>99</line>
+    </frame>
+    <frame>
+      <ip>0x40308D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>221</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1e</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>1,890 bytes in 63 blocks are possibly lost in loss record 31 of 39</text>
+    <leakedbytes>1890</leakedbytes>
+    <leakedblocks>63</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2970</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF2D87</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x402259</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>Solve(int, int, std::string)</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>150</line>
+    </frame>
+    <frame>
+      <ip>0x40308D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>221</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x20</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>2,394 bytes in 63 blocks are possibly lost in loss record 33 of 39</text>
+    <leakedbytes>2394</leakedbytes>
+    <leakedblocks>63</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF27A0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char*&gt;(char*, char*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF287B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(std::string const&amp;, unsigned long, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF28B1</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::substr(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x402291</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>Solve(int, int, std::string)</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>150</line>
+    </frame>
+    <frame>
+      <ip>0x40308D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>221</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x24</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>16,606 bytes in 437 blocks are possibly lost in loss record 37 of 39</text>
+    <leakedbytes>16606</leakedbytes>
+    <leakedblocks>437</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF27A0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char*&gt;(char*, char*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF287B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(std::string const&amp;, unsigned long, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF28B1</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::substr(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x40215D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>Solve(int, int, std::string)</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>145</line>
+    </frame>
+    <frame>
+      <ip>0x40308D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>221</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x25</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>16,606 bytes in 437 blocks are possibly lost in loss record 38 of 39</text>
+    <leakedbytes>16606</leakedbytes>
+    <leakedblocks>437</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2B0E0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF1248</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF27A0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>char* std::string::_S_construct&lt;char*&gt;(char*, char*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF287B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(std::string const&amp;, unsigned long, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EF28B1</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19</obj>
+      <fn>std::string::substr(unsigned long, unsigned long) const</fn>
+    </frame>
+    <frame>
+      <ip>0x402195</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>Solve(int, int, std::string)</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>145</line>
+    </frame>
+    <frame>
+      <ip>0x40308D</ip>
+      <obj>/home/x86isnice/file_of_list/bin/Debug/file_of_list</obj>
+      <fn>main</fn>
+      <dir>/home/x86isnice/file_of_list</dir>
+      <file>main.cpp</file>
+      <line>221</line>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
